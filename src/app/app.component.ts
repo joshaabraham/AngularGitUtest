@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularTesting';
+  resume = 'Projet brouillon de tests';
+  cities = ['Marseille', 'Lyon', 'Paris', 'Toulouse', 'bordeaux'];
+  selectedCity: string;
+
+  displayResume(): string {
+    return this.resume;
+  }
+
+  displayCities(): Array<string> {
+    return this.cities;
+  }
+
+  onCitySelected(ev) {
+      const city = ev.target.value;
+      this.selectedCity = city;
+  }
+
 }
