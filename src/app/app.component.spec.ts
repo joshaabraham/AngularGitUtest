@@ -45,7 +45,7 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     const citiesTobePresent = ['Marseille', 'Lyon', 'Paris', 'Toulouse', 'bordeaux'];
 
-    expect(app.cities).toContain('Marseille');
+    expect(app.cities).toContain(citiesTobePresent[1]);
 
   });
 
