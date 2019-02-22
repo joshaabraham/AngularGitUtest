@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularTesting';
   resume = 'Projet brouillon de tests';
+  auteur = 'Remi Duplan';
   cities = ['Marseille', 'Lyon', 'Paris', 'Toulouse', 'bordeaux'];
   selectedCity: string;
 
@@ -22,6 +23,10 @@ export class AppComponent {
   onCitySelected(ev) {
       const city = ev.target.value;
       this.selectedCity = city;
+  }
+
+  displayAuteur(): string {
+    return this.auteur;
   }
 
 }
