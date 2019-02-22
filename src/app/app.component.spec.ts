@@ -40,5 +40,13 @@ describe('AppComponent', () => {
 
   });
 
+  it('Should check if cities are in select', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    const citiesTobePresent = ['Marseille', 'Lyon', 'Paris', 'Toulouse', 'bordeaux'];
+
+    expect(app.cities).toContain('Marseille');
+
+  });
 
 });
